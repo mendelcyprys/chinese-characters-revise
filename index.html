@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Character Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Chinese Character Flashcards</h1>
+        <div id="menu">
+            <button onclick="startGame('character', 'pinyin')">Character → Pinyin</button>
+            <button onclick="startGame('pinyin', 'character')">Pinyin → Character</button>
+            <button onclick="startGame('character', 'meaning')">Character → Meaning</button>
+            <button onclick="startGame('meaning', 'character')">Meaning → Character</button>
+        </div>
+        <div id="game" style="display: none;">
+            <div id="question"></div>
+            <div id="options"></div>
+        </div>
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <ul id="resultsList"></ul>
+            <button onclick="showMenu()">Back to Menu</button>
+        </div>
+    </div>
+    <script src="characters.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
