@@ -94,7 +94,7 @@ function showResults() {
 
     currentGame.results.forEach(result => {
         const li = document.createElement('li');
-        li.textContent = `${result.question}: ${result.attempts} attempt(s), ${result.timeTaken.toFixed(2)} seconds`;
+        li.textContent = `${result.question} (${result.answer}): ${result.attempts} attempt${result.attempts > 1 ? "s" : ""}, ${result.timeTaken.toFixed(2)} seconds`;
         if (result.attempts > 1) {
             li.classList.add('more-than-one');
         }
